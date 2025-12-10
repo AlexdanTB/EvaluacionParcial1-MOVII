@@ -54,6 +54,9 @@ export const styles = StyleSheet.create({
         padding:10,
         margin:5,
         backgroundColor:"white",
-        borderRadius:5
+        borderRadius:5,
+        flexDirection:"row",
+        justifyContent:"center",
+        gap:15
     }
 })

@@ -7,16 +7,18 @@ import { Text } from 'react-native-paper'
 export const HomeScreen = () => {
     return (
         <View style={styles.containerHome}>
-            <View style={styles.headerHome}>
-                <Text variant='headlineSmall'>Lista de productos</Text>
-            </View>
+                <Text variant='headlineSmall' style={{textAlign:"center", margin:8}}>Lista de productos</Text>
             <FlatList
             data={products}
             renderItem={({item})=>
                 <View style={styles.cardProduct}>
-                    <Text variant='labelLarge'>{item.name}</Text>
+                    <Text variant='titleMedium'>{item.name}</Text>
+                    <Text variant='titleMedium' style={{color:"#666565ff"}}>${item.price}</Text>
                 </View>
             }/>
+            <View>
+                <Text variant='titleLarge' style={{textAlign:"center", margin:12}}>Total = $</Text>                
+            </View>
         </View>
     )
 }
