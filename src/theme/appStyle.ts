@@ -49,5 +49,11 @@ export const styles = StyleSheet.create({
         marginHorizontal:20,
         borderRadius:5,
         gap:10
+    },
+    cardProduct:{
+        padding:10,
+        margin:5,
+        backgroundColor:"white",
+        borderRadius:5
     }
 })
